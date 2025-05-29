@@ -31,7 +31,7 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~SURDTSYQ#vF9095gt97ntiIiuLdoSo9mGjXjlkqTs8xz4V9i1K9c",
+    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~LEAQGYKY#6PrdFDvVwjkWMWAJJBQxjbGsGRXJ1Jw135C_YMgxBCY",
     CAPTION: process.env.CAPTION || "POWERED BY SILENTLOVER432",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
     AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
