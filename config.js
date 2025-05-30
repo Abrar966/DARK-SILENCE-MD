@@ -31,8 +31,8 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~LEAQGYKY#6PrdFDvVwjkWMWAJJBQxjbGsGRXJ1Jw135C_YMgxBCY",
-    CAPTION: process.env.CAPTION || "POWERED BY SILENTLOVER432",
+    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~LEQVESRB#qseCKQX-GX2T3xtjvEuteGd01-WNlkL15d4ayl1Bxl0",
+    CAPTION: process.env.CAPTION || "POWERED BY ABRAR HASHMI",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
     AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
     READ_MESSAGE: process.env.READ_MESSAGE || "false", // Added auto-read configuration
@@ -49,7 +49,7 @@ module.exports = {
     FAKE_TYPING: process.env.FAKE_TYPING || "true",
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "true",
     CURRENT_STATUS: process.env.CURRENT_STATUS || "true",
-    AUTO_REACT: process.env.AUTO_REACT || "true",
+    AUTO_REACT: process.env.AUTO_REACT || "false",
     HEART_REACT: process.env.HEART_REACT || "true",
     OWNER_NUMBER: process.env.OWNER_NUMBER || "923440167840",
     OWNER_NAME: process.env.OWNER_NAME || "ABRAR NOOR HASHMI",
