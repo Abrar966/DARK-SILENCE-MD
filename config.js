@@ -12,8 +12,8 @@
 ─██░░░░░░░░░░██──██░░░░░░██──██░░░░░░░░░░██──██░░░░░░░░░░██──██░░██──██████████░░██──────██░░██──────██░░░░░░░░░░██──██░░░░░░░░░░██────████░░████────██░░░░░░░░░░██──██░░██──██░░░░░░██─ 
 ─██████████████──██████████──██████████████──██████████████──██████──────────██████──────██████──────██████████████──██████████████──────██████──────██████████████──██████──██████████─ 
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
-created by Silent_lover432 🕵
-contact me 923096287432 ♻️
+created by ABRAR HASHMI 🕵
+contact me 923440167840 ♻️
 © Copy coder alert ⚠
 */
 
@@ -31,7 +31,7 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~vBIj2awA#vXs9Evgpm6fIpe3XrK7p4J4-MNCCwUbiog0Xal5FJUY",
+    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~6UZjkDCY#mVxpkzd_Rzvpf4T32rRdcvAKZ8vR4gamuTmPXurgSgg",
     CAPTION: process.env.CAPTION || "POWERED BY ABRAR HASHMI",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
     AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
@@ -54,7 +54,7 @@ module.exports = {
     AUTO_REACT: process.env.AUTO_REACT || "false",
     HEART_REACT: process.env.HEART_REACT || "true",
     OWNER_NUMBER: process.env.OWNER_NUMBER || "923440167840",
-    OWNER_NAME: process.env.OWNER_NAME || "ABRAR NOOR HASHMI",
+    OWNER_NAME: process.env.OWNER_NAME || "ABRAR NOOR HASHMI 🔥",
     READ_CMD: process.env.READ_CMD || "true",
     BOT_NAME: process.env.BOT_NAME || "ABRAR-HASHMI-MD",
     STATUS_REPLY: process.env.STATUS_REPLY || "`➺үσυя sтαтυs sεεη נυsт ησω вү ABRAR HASHMI BOT`",
