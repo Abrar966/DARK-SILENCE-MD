@@ -1,7 +1,7 @@
 {
-  "name": "DARK-SILENCE-MD",
-  "description": "JAVASCRIPT WHATSAPP BOT PROJECT POWERD BY SILENTLOVER432 ♥️",
-  "logo": "https://telegra.ph/file/2a06381b260c3f096a612.jpg",
+  "name": "ABRAR HASHMI-MD",
+  "description": "JAVASCRIPT WHATSAPP BOT PROJECT POWERD BY ABRAR HASHMI 🔥 ♥️",
+  "logo": "https://ibb.co/20sNGkqG",
   "keywords": ["bot"],
   "success_url": "/",
   "env": {
@@ -12,15 +12,15 @@
     },  
     
     "ALIVE_IMG": {
-      "description": "paste your image url if you don't have you can use this public url.",
+      "description": "https://ibb.co/20sNGkqG",
       "required": true,
-      "value": "https://files.catbox.moe/9vg76j"
+      "value": "https://ibb.co/20sNGkqG"
     }, 
     
     "ALIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": true,
-      "value": "𝔻𝔸ℝ𝕂-𝕊𝕀𝕃𝔼ℕℂ𝔼-𝕄𝔻 𝔸𝕃𝕀𝕍𝔼 ℕ𝕆𝕎 🤍💫💨"
+      "value": "ABRAR HASHMI-𝕄𝔻 𝔸𝕃𝕀𝕍𝔼 ℕ𝕆𝕎 🤍💫💨"
     },
     
     "PREFIX": {
@@ -92,7 +92,7 @@
     "BOT_NAME": {
       "description": "write hear your name.",
       "required": true,
-      "value": "✦𝐃𝐀𝐑𝐊-𝐒𝐈𝐋𝐄𝐍𝐂𝐄-𝐌𝐃✦"
+      "value": "✦ABRAR HASHMI-𝐌𝐃✦"
     }, 
 
     "HEART_REACT": {
