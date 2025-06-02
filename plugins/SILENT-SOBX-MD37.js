@@ -68,8 +68,12 @@ reply("*_DARK-SILENCE-MD SUCCESSFULLY RESTART...✨_*")
 console.log(e)
 reply(`${e}`)
 }
-})
+});
 
+function isEnabled(value) {
+    // Function to check if a value represents a "true" boolean state
+    return value && value.toString().toLowerCase() === "true";
+}
 cmd({
 
     pattern: "settings",
@@ -92,37 +96,57 @@ async(conn, mek, m,{from, l, quoted, body, isCmd, umarmd, args, q, isGroup, send
 
 try{
 if (!isOwner) return reply("You're not bot owner 🪄.");
+const isEnabled = (value) => value && value.toString().toLowerCase() === "true";
 let madeSetting =`
-*[ •  DARK-SILENCE-MD - SETTINGS‎ • ]*
-*╭━━━〔 SETTING-LIST 📃 〕━━━┈⊷*
-*┃★╭──────────────*
-*┃◈┃•* *♾️ AUTO_READ_STATUS:* ➠ ${config.AUTO_READ_STATUS}
-*┃◈┃•* *♾️ MODE:* ➠ ${config.MODE} 
-*┃◈┃•* *♾️ AUTO_VOICE:* ➠ ${config.AUTO_VOICE} 
-*┃◈┃•* *♾️ AUTO_STICKER:* ➠ ${config.AUTO_STICKER} 
-*┃◈┃•* *♾️ AUTO_REPLY:* ➠ ${config.AUTO_REPLY} 
-*┃◈┃•* *♾️ ALIVE_IMG:* ➠ ${config.ALIVE_IMG} 
-*┃◈┃•* *♾️ ALIVE_MSG:* ➠ ${config.ALIVE_MSG} 
-*┃◈┃•* *♾️ ANTI_LINK:* ➠ ${config.ANTI_LINK} 
-*┃◈┃•* *♾️ ANTI_BAD:* ➠ ${config.ANTI_BAD} 
-*┃◈┃•* *♾️ PREFIX:* ➠ [${config.PREFIX}]
-*┃◈┃•* *♾️ FAKE_RECORDING:* ➠ ${config.FAKE_RECORDING}
-*┃◈┃•* *♾️ FAKE_TYPING:* ➠ ${config.FAKE_TYPING}
-*┃◈┃•* *♾️ AUTO_REACT:* ➠ ${config.AUTO_REACT} 
-*┃◈┃•* *♾️ HEART_REACT:* ➠ ${config.HEART_REACT} 
-*┃◈┃•* *♾️ AUTO_REPLY_STATUS:* ➠ ${config.AUTO_REPLY_STATUS} 
-*┃◈┃•* *♾️ BOT_NAME:* ➠ ${config.BOT_NAME}
-*┃◈┃•* *♾️ READ_MESSAGE:* ➠ ${config.READ_MESSAGE}
-*┃◈┃•* *♾️ READ_CMD:* ➠ ${config.READ_CMD}
-*┃◈┃•* *♾️ CAPTION:* ➠ ${config.CAPTION}
-*┃◈┃•* *♾️ ALWAYS_ONLINE:* ➠ ${config.ALWAYS_ONLINE}
-*┃◈┃•* *♾️ CURRENT_STATUS:* ➠ ${config.CURRENT_STATUS}
-*┃◈┃•* *♾️ STATUS_REPLY:* ➠ ${config.STATUS_REPLY}
-*┃◈┃•* *♾️ STATUS_REACT:* ➠ ${config.STATUS_REACT}
-*┃◈┃•* *♾️ ANTI_DEL_PATH:* ➠ ${config.ANTI_DEL_PATH}
+*[ •  𝔻𝔸ℝ𝕂-𝕊𝕀𝕃𝔼ℕℂ𝔼-𝕄𝔻 - 𝕊𝔼𝕋𝕋𝕀ℕ𝔾𝕊‎ • ]*
+*🂱━━━〔 📃 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 𝐋𝐈𝐒𝐓 📃 〕━━━🂱*
+*[ •  🂱 𝐀𝐔𝐓𝐎 • 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 🂱  • ]*
+*╭━━━━━━━━━━━━━━━━━┈⊷*
+*┃★╭━━━━━━━━━━━┈⊷*
+*┃◈┃•* *🂱 AUTO_READ_STATUS:* ➠ ${isEnabled(config.AUTO_READ_STATUS) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_REPLY_STATUS:* ➠ ${isEnabled(config.AUTO_REPLY_STATUS) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_VOICE:* ➠ ${isEnabled(config.AUTO_VOICE) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_STICKER:* ➠ ${isEnabled(config.AUTO_STICKER) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_REPLY:* ➠ ${isEnabled(config.AUTO_REPLY) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_REACT:* ➠ ${isEnabled(config.AUTO_REACT) ? "✅" : "❌"}
+*┃◈┃•* *🂱 HEART_REACT:* ➠ ${isEnabled(config.HEART_REACT) ? "✅" : "❌"}
+*┃◈┃•* *🂱 STATUS_REACT:* ➠ ${isEnabled(config.STATUS_REACT) ? "✅" : "❌"}
 *┃★╰──────────────*
 *╰━━━━━━━━━━━━━━━┈⊷*
-
+*[ •  🂱 𝐌𝐄𝐃𝐈𝐀 • 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 🂱  • ]*
+*╭━━━━━━━━━━━━━━━━━┈⊷*
+*┃★╭━━━━━━━━━━━┈⊷*
+*┃◈┃•* *🂱 ALIVE_IMG:* ➠ ${config.ALIVE_IMG}
+*┃◈┃•* *🂱 ALIVE_MSG:* ➠ ${config.ALIVE_MSG} 
+*┃◈┃•* *🂱 BOT_NAME:* ➠ ${config.BOT_NAME}
+*┃◈┃•* *🂱 CAPTION:* ➠ ${config.CAPTION}
+*┃◈┃•* *🂱 STATUS_REPLY:* ➠ ${config.STATUS_REPLY}
+*┃★╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
+*[ •  🂱 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘 • 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 🂱  • ]*
+*╭━━━━━━━━━━━━━━━━━┈⊷*
+*┃★╭━━━━━━━━━━━┈⊷*
+*┃◈┃•* *🂱 ALWAYS_ONLINE:* ➠ ${isEnabled(config.ALWAYS_ONLINE) ? "✅" : "❌"}
+*┃◈┃•* *🂱 ANTI_LINK:* ➠ ${isEnabled(config.ANTI_LINK) ? "✅" : "❌"}
+*┃◈┃•* *🂱 ANTI_CALL:* ➠ ${isEnabled(config.ANTI_CALL) ? "✅" : "❌"}
+*┃◈┃•* *🂱 ANTI_BAD:* ➠ ${isEnabled(config.ANTI_BAD) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_BLOCK:* ➠ ${isEnabled(config.AUTO_BLOCK) ? "✅" : "❌"}
+*┃◈┃•* *🂱 BAD_NUMBER_BLOCKER:* ➠ ${isEnabled(config.BAD_NUMBER_BLOCKER) ? "✅" : "❌"}
+*┃◈┃•* *🂱 CURRENT_STATUS:* ➠ ${isEnabled(config.CURRENT_STATUS) ? "✅" : "❌"}
+*┃◈┃•* *🂱 FAKE_RECORDING:* ➠ ${isEnabled(config.FAKE_RECORDING) ? "✅" : "❌"}
+*┃◈┃•* *🂱 FAKE_TYPING:* ➠ ${isEnabled(config.FAKE_RECORDING) ? "✅" : "❌"}
+*┃◈┃•* *🂱 READ_MESSAGE:* ➠ ${isEnabled(config.READ_MESSAGE) ? "✅" : "❌"}
+*┃◈┃•* *🂱 READ_CMD:* ➠ ${isEnabled(config.READ_CMD) ? "✅" : "❌"}
+*┃★╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
+*[ •  🂱 𝐒𝐘𝐒𝐓𝐄𝐌 • 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 🂱  • ]*
+*╭━━━━━━━━━━━━━━━━━┈⊷*
+*┃★╭━━━━━━━━━━━┈⊷*
+*┃◈┃•* *🂱 MODE:* ➠ ${config.MODE} 
+*┃◈┃•* *🂱 PREFIX:* ➠ [${config.PREFIX}]
+*┃◈┃•* *🂱 ANTI_DEL_PATH:* ➠ ${config.ANTI_DEL_PATH}
+*┃★╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 *•────────────•⟢*
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
 *•────────────•⟢*
@@ -137,7 +161,7 @@ mentionedJid: [m.sender],
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363189714152560@newsletter',
-                    newsletterName: 'sιℓεηт-sσвx-м∂',
+                    newsletterName: '𝘿𝘼𝙍𝙆-𝙎𝙄𝙇𝙀𝙉𝘾𝙀-𝙈𝘿',
                     serverMessageId: 143
                 }
             }
@@ -314,7 +338,7 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         // Format the repository information
-        const formattedInfo = `> *_DARK-SILENCE-MD IS THE LATAST VERSION OF SILENT-SOBX-MD THIS BOT CREATED TO USE BAILEYS DARK-SILENCE-MD WORLD BEST WHATSAPP BOT POWERD BY SILENTLOVER432💙🌍_*\n\n*[ BOT • NAME:📦 ]*\n> ${repoData.name}\n\n*[ OWNER • NAME:🪩 ]*\n> SILENTLOVER432\n\n*[ STARS:🌟 ]*\n> ${repoData.stargazers_count}\n\n*[ FORKS:🚀 ]*\n> ${repoData.forks_count}\n\n*[ GITHUB • LINK:💫 ]*\n> ${repoData.html_url}\n\n*[ DESCRIPTION:🤖 ]*\n> ${repoData.description || '*THE WORLD 🌍 BEST WHATSAPP BOT CREATED BY SILENTLOVER432 ♥️*'}\n\n*DON'T FORGET TO STAR 🌟 AND FORK REPOSITORY 🚀*\n\n> *© POWERED BY SILENTLOVER432 ♥️*`;
+        const formattedInfo = `*🂱 𝑫𝑨𝑹𝑲-𝑺𝑰𝑳𝑬𝑵𝑪𝑬-𝑴𝑫 • 𝑺𝑪𝑹𝑰𝑷𝑻 🂱*\n\n> *_DARK-SILENCE-MD IS THE LATAST VERSION OF SILENT-SOBX-MD THIS BOT CREATED TO USE BAILEYS DARK-SILENCE-MD WORLD BEST WHATSAPP BOT POWERD BY SILENTLOVER432💙🌍_*\n\n*[ 𝑩𝑶𝑻 • 𝑵𝑨𝑴𝑬:📦 ]*\n> ${repoData.name}\n\n*[ 𝑶𝑾𝑵𝑬𝑹 • 𝑵𝑨𝑴𝑬:🪩 ]*\n> 𝑆𝐼𝐿𝐸𝑁𝑇𝐿𝑂𝑉𝐸𝑅432\n\n*[ 𝑩𝑶𝑻 • 𝑺𝑻𝑨𝑹𝑺:🌟 ]*\n> ${repoData.stargazers_count}\n\n*[ 𝑩𝑶𝑻 • 𝑭𝑶𝑹𝑲𝑺:🚀 ]*\n> ${repoData.forks_count}\n\n*[ 𝑮𝑰𝑻𝑯𝑼𝑩 • 𝑳𝑰𝑵𝑲:💫 ]*\n> ${repoData.html_url}\n\n*[ 𝑩𝑶𝑻 • 𝑫𝑬𝑺𝑪𝑹𝑷𝑻𝑰𝑶𝑵:🤖 ]*\n> ${repoData.description || '*𝑻𝒉𝒆 𝑾𝒐𝒓𝒍𝒅 🌍 𝑩𝒆𝒔𝒕 𝑾𝒉𝒂𝒕𝒔𝒂𝒑𝒑 𝑩𝒐𝒕 𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝑺𝒊𝒍𝒆𝒏𝒕𝒍𝒐𝒗𝒆𝒓⁴³² ♥️*'}\n\n*DON'T FORGET TO STAR 🌟 AND FORK REPOSITORY 🚀*\n\n> *© POWERED BY SILENTLOVER432 ♥️*`;
 
         // Send an image with the formatted info as a caption and context info
         await conn.sendMessage(from, {

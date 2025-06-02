@@ -1,11 +1,9 @@
 {
   "name": "DARK-SILENCE-MD",
   "description": "JAVASCRIPT WHATSAPP BOT PROJECT POWERD BY SILENTLOVER432 ♥️",
-  "logo": "https://files.catbox.moe/9vg76j",
+  "logo": "https://telegra.ph/file/2a06381b260c3f096a612.jpg",
   "keywords": ["bot"],
   "success_url": "/",
-
-    "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
@@ -22,7 +20,7 @@
     "ALIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": true,
-      "value": "ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ɪᴍ ᴀʟɪᴠᴇ ɴᴏᴡ.!!"
+      "value": "𝔻𝔸ℝ𝕂-𝕊𝕀𝕃𝔼ℕℂ𝔼-𝕄𝔻 𝔸𝕃𝕀𝕍𝔼 ℕ𝕆𝕎 🤍💫💨"
     },
     
     "PREFIX": {
@@ -94,7 +92,7 @@
     "BOT_NAME": {
       "description": "write hear your name.",
       "required": true,
-      "value": "✦∂αяк-sιℓεηcε-м∂✦"
+      "value": "✦𝐃𝐀𝐑𝐊-𝐒𝐈𝐋𝐄𝐍𝐂𝐄-𝐌𝐃✦"
     }, 
 
     "HEART_REACT": {
@@ -112,13 +110,13 @@
     "CAPTION": {
       "description": "enter your caption if you want to show on menu.",
       "required": true,
-      "value": "POWERED BY SILENTLOVER432"
+      "value": "𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐒𝐈𝐋𝐄𝐍𝐓𝐋𝐎𝐕𝐄𝐑432"
     }, 
     
     "STATUS_REPLY": {
       "description": "enter your caption if you want to show on status reply.",
       "required": false,
-      "value": "➺үσυя sтαтυs sεεη נυsт ησω вү ∂αяк-sιℓεηcε-м∂"
+      "value": "🂱 𝐘𝐎𝐔𝐑 𝐒𝐓𝐀𝐓𝐔𝐒 𝐒𝐄𝐄𝐍 𝐀𝐍𝐃 𝐋𝐈𝐊𝐄 𝐉𝐔𝐒𝐓 𝐍𝐎𝐖 𝐖𝐈𝐀 𝐃𝐀𝐑𝐊-𝐒𝐈𝐋𝐄𝐍𝐂𝐄-𝐌𝐃 🂱"
     },
     
     "AUTO_REPLY_STATUS": {
@@ -163,14 +161,33 @@
       "value": "923096287432"
     }, 
 
-     "OWNER_NAME": {
+    "OWNER_NAME": {
       "description": "replace it with your own name.",
       "required": false,
       "value": "➺ѕเℓεɳƭ_ℓσѵε૨࿐"
-     }
-},
+     },
 
-"buildpacks": [
+    "INBOX_BLOCK": {
+      "description": "make it true if you sure you want to block inbox user.",
+      "required": true,
+      "value": "false"
+   }, 
+
+    "ANTI_CALL": {
+      "description": "Make it true if you want bot automatically decline your call.",
+      "required": true,
+      "value": "false"
+    },
+
+    "BAD_NUMBER_BLOCKER": {
+      "description": "Make it true if you want bot auto block bad numbers example 263 or 212.",
+      "required": true,
+      "value": "false"
+    }
+    
+  },
+  
+  "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }

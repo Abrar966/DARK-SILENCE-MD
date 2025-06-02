@@ -4,9 +4,9 @@
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name SILENT-SOBX-MD",
-    "stop": "pm2 stop SILENT-SOBX-MD",
-    "restart": "pm2 restart SILENT-SOBX-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name DARK-SILENCE-MD",
+    "stop": "pm2 stop DARK-SILENCE-MD",
+    "restart": "pm2 restart DARK-SILENCE-MD"
   },
 "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
@@ -27,8 +27,8 @@
         "@sl-code-lords/si-subdl": "1.1.1",
         "@sl-code-lords/wabetainfo": "1.2.0",
         "@tobyg74/tiktok-api-dl": "1.0.13",
-        "@dark-yasiya/yt-dl.js":"latest", 
-        "@dark-yasiya/scrap":"1.0.1",
+        "@dark-yasiya/yt-dl.js": "latest", 
+        "@dark-yasiya/scrap": "1.0.1",
         "@vitalets/google-translate-api": "9.2.1",
         "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
         "api-dylux": "latest",
@@ -82,6 +82,7 @@
         "mime-types": "2.1.35",
         "nima-wabeta-info": "1.0.5",
         "node-fetch": "^2.6.1",
+        "node-cache" : "5.1.2", 
         "pastebin-js": "latest",
         "path": "^0.12.7",
         "pino": "^9.5.0",
@@ -92,7 +93,7 @@
         "qrcode-terminal": "^0.12.0",
         "qs": "^6.10.1",
         "remove-bg-node": "1.0.3",
-        "ruhend-scraper":"8.0.7", 
+        "ruhend-scraper": "8.0.7", 
         "Sachibot-Spotifydl": "git+https://github.com/AlenVelocity/spotifydl-core.git",
         "scr-emoji": "0.0.3",
         "seedr": "^1.1.2",
@@ -116,16 +117,16 @@
         "youtubedl-core": "4.11.7",
         "ytdl-mp3": "3.4.0",
         "ytdl-secktor": "latest",
-        "ytmp3-scrap":"1.0.0",
-        "bing-translate-api":"4.0.2", 
+        "ytmp3-scrap": "1.0.0",
+        "bing-translate-api": "4.0.2", 
         "ruhend-scraper" : "9.0.1",
         "dark-yasiya-sinhalasub.lk": "1.0.1",
         "moment-timezone": "^0.5.43",
         "mfiredlcore-vihangayt": "^1.0.0",
         "ytsearch-venom": "1.0.0",
         "yt-search": "2.13.1", 
-        "@mrnima/tiktok-downloader":"1.0.0",
-        "@mrnima/facebook-downloader":"1.0.0",
-        "mrnima-moviedl":"1.0.0"
+        "@mrnima/tiktok-downloader": "1.0.0",
+        "@mrnima/facebook-downloader": "1.0.0",
+        "mrnima-moviedl": "1.0.0"
     }
 }

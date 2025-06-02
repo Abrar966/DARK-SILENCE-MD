@@ -69,7 +69,7 @@ async(conn, mek, m,{from, l, quoted, body, isCmd, umarmd, args, q, isGroup, send
 
 try{
 let madeMenu = `
-*╭━━〔 ᴄᴍᴅ-ʟɪsᴛ 〕━━┈⊷*
+*╭━━〔 ℂ𝕄𝔻 • 𝕃𝕀𝕊𝕋 〕━━┈⊷*
 *┃◈╭─────────────·๏*
 *┃◈┃• ᴘʟᴀᴛғᴏʀᴍ* : *${process.env.DYNO ? "Heroku" : "Localhost"}*
 *┃◈┃• ᴍᴏᴅᴇ* : *[${config.MODE}]*
@@ -90,7 +90,7 @@ let madeMenu = `
 
 
 
-*╭──❮ DOWNLOAD COMMANDS ❯*
+*╭──❮ 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ❯*
 │
 │📖 COMMAND: .play
 │ℹ️ Download Audio from yt
@@ -138,7 +138,7 @@ let madeMenu = `
 │ℹ️ Download mediafire files
 ╰────────────⦁ 
 
-*╭──❮ RANDOM COMMANDS ❯*
+*╭──❮ 𝐑𝐄𝐍𝐃𝐎𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ❯*
 │
 │📖 COMMAND: .yts
 │ℹ️ Serch videos from yt
@@ -159,7 +159,7 @@ let madeMenu = `
 │ℹ️ get romantic anime pics
 ╰────────────⦁  
 
-*╭──❮‍ INFO COMMANDS ❯*
+*╭──❮‍ 𝐈𝐍𝐅𝐎 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ❯*
 │
 │📖 COMMAND: .alive
 │ℹ️ Check online or not
@@ -195,7 +195,7 @@ let madeMenu = `
 │ℹ️ get bot repository 
 ╰────────────⦁
 
-*╭──❮ OTHER COMMANDS ❯*
+*╭──❮ 𝐎𝐓𝐇𝐄𝐑𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ❯*
 │
 │📖 COMMAND: .joke 
 │ℹ️ Get Rendom joke 
@@ -219,7 +219,7 @@ let madeMenu = `
 │ℹ️ serch any words
 ╰────────────⦁
 
-*╭──❮ GROUP COMMANDS ❯*
+*╭──❮ 𝐆𝐑𝐎𝐔𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ❯*
 │
 │📖 COMMAND: .mute
 │ℹ️ Mute group
@@ -315,7 +315,7 @@ let madeMenu = `
 │ℹ️ set time to disappear sms
 ╰────────────⦁
 
-*╭──❮ OWNER COMMANDS ❯*
+*╭──❮ 𝐎𝐖𝐍𝐄𝐑 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ❯*
 │
 │📖 COMMAND: .update
 │ℹ️ update bot velue 
@@ -360,7 +360,7 @@ let madeMenu = `
 │ℹ️ get group jid
 ╰────────────⦁
 
-*╭──❮ CONVERT COMMANDS ❯*
+*╭──❮ 𝐂𝐎𝐍𝐕𝐄𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ❯*
 │
 │📖 COMMAND: .sticker
 │ℹ️ convert photo to sticker
