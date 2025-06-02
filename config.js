@@ -31,7 +31,7 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "https://ibb.co/20sNGkqG",
+    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~Kc4EGTZY#OnTL6zgaK8yF3FGvttuQHly3HiFagNQa_w1oTQ2Y37Y",
     CAPTION: process.env.CAPTION || "POWERED BY ABRAR HASHMI",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
     AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
@@ -40,7 +40,7 @@ module.exports = {
     AUTO_VOICE: process.env.AUTO_VOICE || "false",
     AUTO_STICKER: process.env.AUTO_STICKER || "false",
     AUTO_REPLY: process.env.AUTO_REPLY || "false",
-    ALIVE_IMG: process.env.ALIVE_IMG || "https://postimg.cc/06QZPtH5",
+    ALIVE_IMG: process.env.ALIVE_IMG || "https://ibb.co/20sNGkqG",
     ALIVE_MSG: process.env.ALIVE_MSG || "HII DEAR IM ONLINE I'M ABRAR HASHMI-MD WHATSAPP BOT 😊♻️",
     ANTI_LINK: process.env.ANTI_LINK || "true",
     ANTI_CALL: process.env.ANTI_CALL || "true",
