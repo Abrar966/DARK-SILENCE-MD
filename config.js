@@ -31,7 +31,7 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~DJwVDJ5b#qULE1VbFGbFF1dWqXfMo8FuTFUI_OgTA08bJhOQYzWo",
+    SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~bZJimLgL#1iOXZq3CJUaR0LD5NXE4MXlDMh0HrrFh4YXnL29TwR8",
     CAPTION: process.env.CAPTION || "POWERED BY ABRAR HASHMI",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
     AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
@@ -48,11 +48,11 @@ module.exports = {
     ANTI_BAD: process.env.ANTI_BAD || "true",
     PREFIX: process.env.PREFIX || ".",
     FAKE_RECORDING: process.env.FAKE_RECORDING || "false",
-    FAKE_TYPING: process.env.FAKE_TYPING || "false",
-    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
+    FAKE_TYPING: process.env.FAKE_TYPING || "true",
+    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "true",
     CURRENT_STATUS: process.env.CURRENT_STATUS || "true",
-    AUTO_REACT: process.env.AUTO_REACT || "false",
-    HEART_REACT: process.env.HEART_REACT || "false",
+    AUTO_REACT: process.env.AUTO_REACT || "true",
+    HEART_REACT: process.env.HEART_REACT || "true",
     OWNER_NUMBER: process.env.OWNER_NUMBER || "923440167840",
     OWNER_NAME: process.env.OWNER_NAME || "ABRAR NOOR HASHMI 🔥",
     READ_CMD: process.env.READ_CMD || "true",
